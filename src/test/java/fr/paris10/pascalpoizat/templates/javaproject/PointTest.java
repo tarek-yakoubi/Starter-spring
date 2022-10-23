@@ -43,6 +43,12 @@ public class PointTest {
     }
 
     @org.testng.annotations.Test
+    public void testGetY() throws Exception {
+        Point p = new Point(3, 4);
+        assertEquals(p.getY(), 4);
+    }
+
+    @org.testng.annotations.Test
     public void testSetY() throws Exception {
         Point p = new Point(3, 4);
         p.setY(6);
